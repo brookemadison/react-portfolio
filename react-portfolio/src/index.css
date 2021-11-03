@@ -21,6 +21,10 @@ main {
   box-sizing: border-box;
 }
 
+@import url(//db.onlinewebfonts.com/c/68b898f6044bbee439423445076f3168?family=Roxborough+CF+Thin);
+
+@font-face {font-family: "Roxborough CF Thin"; src: url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.eot"); src: url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.woff") format("woff"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.svg#Roxborough CF Thin") format("svg"); }
+
 html,
 body {
   min-height: 100%;
@@ -35,7 +39,7 @@ body {
   letter-spacing: .1em;
   background: var(--light);
   color: var(--darker);
-  font-family: 'Poiret One', cursive;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -45,7 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roxborough CF Thin", serif; 
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -83,11 +87,10 @@ p {
 a {
   color: var(--darker);
   text-decoration: none;
-  font-weight: bold;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
