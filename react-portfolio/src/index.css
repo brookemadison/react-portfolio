@@ -14,7 +14,6 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-
 }
 
 * {
@@ -49,7 +48,6 @@ h4,
 h5,
 h6 {
   font-family: "Roxborough CF Thin", serif; 
-  font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
 }
