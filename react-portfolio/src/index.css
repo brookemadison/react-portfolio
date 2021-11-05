@@ -20,6 +20,7 @@ main {
 
 * {
   box-sizing: border-box;
+  background-color: var(--light)
 }
 
 /* Fonts */
@@ -39,7 +40,6 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--light);
   color: var(--darker);
   font-family: 'Lato', sans-serif;
 }
@@ -84,22 +84,66 @@ p {
   margin-top: 0;
 }
 
+/* **HOMEPAGE SECTION** */
+
 /* Navbar Section */
 
 
 
-/* Homepage About Section */
+/* About Section */
 
 img {
   max-width: 100%;
 }
 
+
 span[role="img"] {
   cursor: default;
 }
 
+.about-me-btn {
+  text-decoration:none;
+  text-transform: uppercase;
+  color: var(--dark);
+  letter-spacing: 0;
+}
 
+.about-me-btn:hover,
+.about-me-btn:active {
+  letter-spacing: 5px;
+  color: var(--dark)
+}
 
+.about-me-btn:after,
+.about-me-btn:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid var(--dark);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+          transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.about-me-btn:hover:after,
+.about-me-btn:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: var(--dark);
+  -webkit-transition: width 350ms ease-in-out;
+          transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.about-me-btn:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
 
 .container {
   width: 85%;
@@ -176,5 +220,10 @@ span[role="img"] {
   height: 150px;
   margin-bottom: 25px;
   cursor: pointer;
-}
+} 
 
+/* Portfolio Section */
+
+/* Contact Section */
+
+/* **HOMEPAGE SECTION END** */
