@@ -253,4 +253,18 @@ text-decoration: none;
 
 
 
+
 /* **HOMEPAGE SECTION END** */
+
+/* FOOTER START */
+
+.footer {
+text-decoration: none;
+color: var(--darker);
+}
+
+.flex-row {
+  list-style-type: none;
+}
+
+/* FOOTER END */
