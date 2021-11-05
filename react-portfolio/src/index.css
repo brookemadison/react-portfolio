@@ -84,6 +84,53 @@ p {
   margin-top: 0;
 }
 
+/* BUTTONS */
+.btns {
+  text-decoration:none;
+  text-transform: uppercase;
+  color: var(--dark);
+  letter-spacing: 0;
+}
+
+.btns:hover:hover,
+.btns:active {
+  letter-spacing: 5px;
+  color: var(--dark)
+}
+
+.btns:after,
+.btns:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid var(--dark);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+          transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btns:hover:after,
+.btns:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: var(--dark);
+  -webkit-transition: width 350ms ease-in-out;
+          transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btns:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+
+
+
 /* **HOMEPAGE SECTION** */
 
 /* Navbar Section */
@@ -101,49 +148,6 @@ span[role="img"] {
   cursor: default;
 }
 
-.about-me-btn {
-  text-decoration:none;
-  text-transform: uppercase;
-  color: var(--dark);
-  letter-spacing: 0;
-}
-
-.about-me-btn:hover,
-.about-me-btn:active {
-  letter-spacing: 5px;
-  color: var(--dark)
-}
-
-.about-me-btn:after,
-.about-me-btn:before {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border: 1px solid var(--dark);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: all 280ms ease-in-out;
-          transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.about-me-btn:hover:after,
-.about-me-btn:hover:before {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-color: var(--dark);
-  -webkit-transition: width 350ms ease-in-out;
-          transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.about-me-btn:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
-}
 
 .container {
   width: 85%;
@@ -225,5 +229,28 @@ span[role="img"] {
 /* Portfolio Section */
 
 /* Contact Section */
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+.contact-form submit-btn { 
+text-decoration: none;
+}
+
+
 
 /* **HOMEPAGE SECTION END** */

@@ -15,7 +15,7 @@ function About() {
       </div>
       <div className="btn">
       <a href="#about" 
-      className="about-me-btn">More about me</a>
+      className="btns">More about me</a>
       </div>
     </section>
   )
