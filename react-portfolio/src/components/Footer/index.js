@@ -1,28 +1,26 @@
 import React from 'react';
+import { BsGithub, BsLinkedin, BsStackOverflow } from 'react-icons/bs';
 
-function Footer (){
-    const handleClick = () => {
-            console.log("click handled")
-          }
-        
-          return (
-            <footer data-testid="header" className="flex-row px-1">
-              <h2>
-                <a className="footer" href="/">
-                 Brooke Madison
-                </a>
-              </h2>
-              <nav>
-                <ul className="flex-row">
-                  <li className="mx-2">
-                    <a className="footer" href="#contact" onClick={() => handleClick()}>
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </footer>
-          );
-        }
+
+
+const Footer = () => {
+  return (
+   <footer className="footer-container">
+       <a className="footer-icons grow" href="https://github.com/brookemadison" rel='noopener noreferrer' target='_blank'>
+         <BsGithub />
+      </a>
+       <a className="footer-icons grow" href="https://www.linkedin.com/in/brookemadisondesign/" rel='noopener noreferrer' target='_blank'>
+          <BsLinkedin />
+      </a>
+       <a className="footer-icons grow" href="https://stackoverflow.com/users/15789674/brooke-madison" rel='noopener noreferrer' target='_blank'>
+          <BsStackOverflow />
+        </a>
+  </footer>
+  )
+  
+}
 
 export default Footer;
+
+
+

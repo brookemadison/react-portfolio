@@ -1,7 +1,6 @@
-
 main {
-	margin: 0 auto;
-	max-width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
   padding: 50px 30px;
 }
 
@@ -26,7 +25,11 @@ main {
 /* Fonts */
 @import url(//db.onlinewebfonts.com/c/68b898f6044bbee439423445076f3168?family=Roxborough+CF+Thin);
 
-@font-face {font-family: "Roxborough CF Thin"; src: url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.eot"); src: url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.woff") format("woff"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.svg#Roxborough CF Thin") format("svg"); }
+@font-face {
+  font-family: "Roxborough CF Thin";
+  src: url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.eot");
+  src: url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.woff") format("woff"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/68b898f6044bbee439423445076f3168.svg#Roxborough CF Thin") format("svg");
+}
 
 html,
 body {
@@ -51,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roxborough CF Thin", serif; 
+  font-family: "Roxborough CF Thin", serif;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -87,7 +90,7 @@ p {
 
 /* BUTTONS */
 .btns {
-  text-decoration:none;
+  text-decoration: none;
   text-transform: uppercase;
   color: var(--dark);
   letter-spacing: 0;
@@ -102,7 +105,7 @@ p {
 .btns:after,
 .btns:before {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border: 1px solid var(--dark);
   bottom: 0px;
   content: " ";
@@ -110,17 +113,17 @@ p {
   margin: 0 auto;
   position: relative;
   -webkit-transition: all 280ms ease-in-out;
-          transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
   width: 0;
 }
 
 .btns:hover:after,
 .btns:hover:before {
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-color: var(--dark);
   -webkit-transition: width 350ms ease-in-out;
-          transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
   width: 70%;
 }
 
@@ -222,7 +225,7 @@ span[role="img"] {
   height: 150px;
   margin-bottom: 25px;
   cursor: pointer;
-} 
+}
 
 /* Portfolio Section */
 
@@ -245,8 +248,8 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-.contact-form submit-btn { 
-text-decoration: none;
+.contact-form submit-btn {
+  text-decoration: none;
 }
 
 /* **HOMEPAGE SECTION END** */
@@ -254,12 +257,30 @@ text-decoration: none;
 /* FOOTER START */
 
 .footer {
-text-decoration: none;
-color: var(--darker);
+  text-decoration: none;
+  color: var(--darker);
 }
 
 .flex-row {
   list-style-type: none;
 }
+
+.footer-icons {
+  color: var(--dark);
+  transition: all .2s ease-in-out;
+}
+
+.footer-icons:hover {
+  color: var(--secondary);
+  transform: scale(1.5);
+}
+
+.footer-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 
 /* FOOTER END */
