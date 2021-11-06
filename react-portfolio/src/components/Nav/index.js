@@ -60,6 +60,7 @@ const Navigation = (props) => {
           <Nav.Link href="#action2">About</Nav.Link>
           <Nav.Link href="#action3">Projects</Nav.Link>
           <Nav.Link href="#action4">Contact</Nav.Link>
+          <Nav.Link href="#action4">Resume</Nav.Link>
         </Nav>
        
       </Offcanvas.Body>

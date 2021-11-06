@@ -33,6 +33,7 @@ body {
   min-height: 100%;
 }
 
+/* Text Styles */
 body {
   margin: 0;
   padding: 0;
@@ -129,13 +130,10 @@ p {
   width: 70%;
 }
 
+/* NAVBAR SECTION */
 
 
 /* **HOMEPAGE SECTION** */
-
-/* Navbar Section */
-
-
 
 /* About Section */
 
@@ -250,9 +248,6 @@ input:focus {
 .contact-form submit-btn { 
 text-decoration: none;
 }
-
-
-
 
 /* **HOMEPAGE SECTION END** */
 
