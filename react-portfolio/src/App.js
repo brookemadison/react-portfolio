@@ -1,6 +1,5 @@
 import React from "react";
 import Nav from "./components/Nav";
-import Home from "./components/Home";
 import About from "./components/About";
 import Project from "./components/Project";
 import ContactForm from "./components/Contact";
@@ -12,7 +11,6 @@ function App() {
     <div>
       <Nav></Nav>
       <main>
-        <Home></Home>
         <About></About>
         <Project></Project>
         <ContactForm></ContactForm>

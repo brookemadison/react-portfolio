@@ -6,9 +6,9 @@ main {
 
 /* Color Theme */
 :root {
-  --primary: #EAFF82;
+  --primary: #b19f39;
   --secondary: #E45A2B;
-  --light: #FCF9F5;
+  --light: #f5efea;
   --dark: #3E2127;
   --darker: #291707;
   --error: rgb(228, 46, 1);
@@ -134,6 +134,16 @@ p {
 }
 
 /* NAVBAR SECTION */
+
+.navbar-style {
+  font-family: "Roxborough CF Thin", serif;
+}
+
+.navbar-offcanvas {
+  font-family: "Roxborough CF Thin", serif;
+  color: var(--light);
+  background-color: var(--primary);
+}
 
 
 /* **HOMEPAGE SECTION** */
