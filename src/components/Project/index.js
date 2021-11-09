@@ -1,36 +1,13 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from 'react-bootstrap/Carousel';
-  
+import SecondGrpProject from '../../assets/projects/1.png'
+
+
+
 function Project() {
   return (
-    <div style={{ display: 'block', width: 700, padding: 30 }}>
-      <h1>My Portfolio</h1>
-      <Carousel>
-        <Carousel.Item interval={1500}>
-          <img
-            className="d-block w-100"
-src="react-portfolio/src/assets/carousel/decide-eat.png"
-            alt="Slide one"
-          />
-          <Carousel.Caption>
-            <h3>Label for first slide</h3>
-            <p>Sample Text for Image One</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <img
-            className="d-block w-100"
-src="react-portfolio/src/assets/carousel/pokedex.png"
-            alt="Slide Two"
-          />
-          <Carousel.Caption>
-            <h3>Label for second slide</h3>
-            <p>Sample Text for Image Two</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </div>
-  );
+    <main>
+        <a href='https://protected-hamlet-00069.herokuapp.com/' rel='noopener noreferrer' target='_blank'>2nd Group Project: Pokedex-Project<img src={SecondGrpProject} className=' justify-evenly' style={{ width: '80% '}} alt='pokedex-project'/></a>
+    </main>
+  )
 }
 export default Project;

@@ -5,7 +5,7 @@ const Navigation = (props) => {
   return (
     <Navbar className="navbar-style" bg="*" expand={false}>
       <Container fluid>
-        <Navbar.Brand href="#">Brooke Madison</Navbar.Brand>
+        <Navbar.Brand href="#Home">Brooke Madison</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           className="navbar-offcanvas"
@@ -25,39 +25,39 @@ const Navigation = (props) => {
             <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
               <Nav.Link
                 className="navbar-offcanvas"
-                href="#action1"
+                href="src/components/Home/index"
                 style={{ color: "#f5efea" }}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 className="navbar-offcanvas"
-                href="/about'/"
+                href="src/components/About/index"
                 style={{ color: "#f5efea" }}
               >
                 About
               </Nav.Link>
               <Nav.Link
                 className="navbar-offcanvas"
-                href="/project'/"
+                href="src/components/Project.index"
                 style={{ color: "#f5efea" }}
               >
                 Projects
               </Nav.Link>
               <Nav.Link
                 className="navbar-offcanvas"
-                href="/contact'/"
+                href="src/components/Contact/index"
                 style={{ color: "#f5efea" }}
               >
                 Contact
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 className="navbar-offcanvas"
-                href="/Resume'/"
+                href="#Resume"
                 style={{ color: "#f5efea" }}
               >
                 Resume
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

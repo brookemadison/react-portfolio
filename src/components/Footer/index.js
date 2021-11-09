@@ -4,30 +4,36 @@ import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className='footer-container'>
+      <div>
       <a
         className='footer-icons grow'
         href='https://github.com/brookemadison'
         rel='noopener noreferrer'
         target='_blank'
       >
-        <BsGithub />
+        <BsGithub size={28} />
       </a>
+      </div>
+      <div>
       <a
         className='footer-icons grow'
         href='https://www.linkedin.com/in/brookemadisondesign/'
         rel='noopener noreferrer'
         target='_blank'
       >
-        <BsLinkedin />
+        <BsLinkedin size={28} />
       </a>
+      </div>
+      <div>
       <a
         className='footer-icons grow'
         href='https://stackoverflow.com/users/15789674/brooke-madison'
         rel='noopener noreferrer'
         target='_blank'
       >
-        <BsStackOverflow />
+        <BsStackOverflow size={28} />
       </a>
+      </div>
     </footer>
   );
 };

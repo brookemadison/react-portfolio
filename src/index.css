@@ -276,21 +276,24 @@ input:focus {
   list-style-type: none;
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .footer-icons {
   color: var(--dark);
   transition: all .2s ease-in-out;
+  padding: 30px 25px 20px 25px;
 }
 
 .footer-icons:hover {
   color: var(--secondary);
   transform: scale(1.5);
-}
-
-.footer-container {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
 
