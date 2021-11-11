@@ -188,6 +188,10 @@ a.nav-link {
 
 /* About Section */
 
+h2.about-me-header {
+  margin-bottom: 30px;
+}
+
 .about-img {
   display: inline-block;
   justify-content: center;
