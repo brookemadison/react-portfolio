@@ -9,7 +9,7 @@ const Navigation = () => {
         <Navbar.Brand>
         <NavLink 
         className="navbar-brand"
-                to='/brookemadison-react-portfolio'>
+                to='/react-portfolio'>
                   Brooke Madison
             </NavLink>
         </Navbar.Brand>
@@ -34,7 +34,7 @@ const Navigation = () => {
             <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
               <Nav.Link>
             <NavLink className="navbar-offcanvas"
-                style={{ color: "#f5efea" }} to='/brookemadison-react-portfolio'>
+                style={{ color: "#f5efea" }} to='/home'>
             Home
             </NavLink>
               </Nav.Link>
@@ -58,14 +58,14 @@ const Navigation = () => {
              Contact
            </NavLink>
               </Nav.Link>
-              {/* <Nav.Link>
-              //           </NavLink>
-//           <NavLink
-className="navbar-offcanvas"
-                style={{ color: "#f5efea" }}
- to='/resume'>
-//             Resume
-              </Nav.Link> */}
+              <Nav.Link>
+             <NavLink  
+             className="navbar-offcanvas"
+             style={{ color: "#f5efea" }}
+               to='/resume'>
+            Resume
+           </NavLink>
+              </Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
