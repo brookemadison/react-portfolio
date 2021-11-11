@@ -1,91 +1,103 @@
 import React from "react";
-// import { Container, Navbar, Nav, Offcanvas } from "react-bootstrap";
+import { Container, Navbar, Nav, Offcanvas } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
 
-const Nav = () => {
+const Navigation = () => {
   return (
-    // <Navbar className="navbar-style" bg="*" expand={false}>
-    //   <Container fluid>
-    //     <Navbar.Brand href="#Home">Brooke Madison</Navbar.Brand>
-    //     <Navbar.Toggle aria-controls="offcanvasNavbar" />
-    //     <Navbar.Offcanvas
-    //       className="navbar-offcanvas"
-    //       id="offcanvasNavbar"
-    //       aria-labelledby="offcanvasNavbarLabel"
-    //       placement="end"
-    //     >
-    //       <Offcanvas.Header className="navbar-offcanvas" closeButton>
-    //         <Offcanvas.Title
-    //           className="navbar-offcanvas"
-    //           id="offcanvasNavbarLabel"
-    //         >
-    //           Brooke Madison's Portfolio
-    //         </Offcanvas.Title>
-    //       </Offcanvas.Header>
-    //       <Offcanvas.Body className="navbar-offcanvas">
-    //         <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
-    //           <Nav.Link
-    //             className="navbar-offcanvas"
-    //             href="/"
-    //             style={{ color: "#f5efea" }}
-    //           >
-    //             Home
-    //           </Nav.Link>
-    //           <Nav.Link
-    //             className="navbar-offcanvas"
-    //             href="#About"
-    //             style={{ color: "#f5efea" }}
-    //           >
-    //             About
-    //           </Nav.Link>
-    //           <Nav.Link
-    //             className="navbar-offcanvas"
-    //             href="#Project"
-    //             style={{ color: "#f5efea" }}
-    //           >
-    //             Projects
-    //           </Nav.Link>
-    //           <Nav.Link
-    //             className="navbar-offcanvas"
-    //             href="#Contact"
-    //             style={{ color: "#f5efea" }}
-    //           >
-    //             Contact
-    //           </Nav.Link>
-    //           {/* <Nav.Link
-    //             className="navbar-offcanvas"
-    //             href="#Resume"
-    //             style={{ color: "#f5efea" }}
-    //           >
-    //             Resume
-    //           </Nav.Link> */}
-    //         </Nav>
-    //       </Offcanvas.Body>
-    //     </Navbar.Offcanvas>
-    //   </Container>
-    // </Navbar>
-    <header className="sticky top-0 z-50 bg-black">
-      <div className="container flex justify-between mx-auto">
-        <nav>
-          <NavLink to='/lightfooted-react-portfolio' className="items-center px-3 py-6 mr-4 text-4xl font-bold tracking-widest text-white poppy inflex-flex hover:text-blue-400">
+    <Navbar className="navbar-style" bg="*" expand={false}>
+      <Container  fluid>
+        <Navbar.Brand>
+        <NavLink 
+        className="navbar-brand"
+                to='/brookemadison-react-portfolio'>
+                  Brooke Madison
+            </NavLink>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="offcanvasNavbar" />
+        <Navbar.Offcanvas
+          className="navbar-offcanvas"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          placement="end"
+        >
+          <Offcanvas.Header 
+          className="navbar-offcanvas" closeButton>
+            <Offcanvas.Title
+              className="navbar-offcanvas"
+              id="offcanvasNavbarLabel"
+            >
+              Brooke Madison's Portfolio
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body 
+          className="navbar-offcanvas">
+            <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
+              <Nav.Link>
+            <NavLink className="navbar-offcanvas"
+                style={{ color: "#f5efea" }} to='/brookemadison-react-portfolio'>
             Home
-          </NavLink>
-          <NavLink to='/about'>
-            About
-          </NavLink>
-          <NavLink to='/project' activeStyle={{ color: "teal"}} className='inline-flex items-center px-3 py-3 my-6 font-semibold text-white poppy hover:text-blue-400'>
-            Project
-          </NavLink>
-          <NavLink to='/resume' activeStyle={{ color: "teal"}} className='inline-flex items-center px-3 py-3 my-6 font-semibold text-white poppy hover:text-blue-400'>
-            Résumé
-          </NavLink>
-          <NavLink to='/contact' activeStyle={{ color: "teal"}} className='inline-flex items-center px-3 py-3 my-6 font-semibold text-white poppy hover:text-blue-400'>
-            Contact
-          </NavLink>
-        </nav>
-      </div>
-    </header>
-  );
-};
+            </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+            <NavLink className="navbar-offcanvas"
+                style={{ color: "#f5efea" }} to='/about'>
+             About
+           </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+           <NavLink className="navbar-offcanvas"
+                style={{ color: "#f5efea" }} to='/project'>
+             Project
+           </NavLink>              
+</Nav.Link>
+              <Nav.Link>
+             <NavLink  
+             className="navbar-offcanvas"
+             style={{ color: "#f5efea" }}
+               to='/contact'>
+             Contact
+           </NavLink>
+              </Nav.Link>
+              {/* <Nav.Link>
+              //           </NavLink>
+//           <NavLink
+className="navbar-offcanvas"
+                style={{ color: "#f5efea" }}
+ to='/resume'>
+//             Resume
+              </Nav.Link> */}
+            </Nav>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
 
-export default Nav;
+  );
+            };
+
+
+//     <header>
+//       <div >
+//         <nav>
+//           <NavLink to='/brookemadison-react-portfolio'>
+//             Home
+//           </NavLink>
+//           <NavLink to='/about'>
+//             About
+//           </NavLink>
+//           <NavLink to='/project'>
+//             Project
+//           </NavLink>
+//           <NavLink to='/resume'>
+//             Resume
+//           </NavLink>
+//           <NavLink to='/contact'>
+//             Contact
+//           </NavLink>
+//         </nav>
+//       </div>
+//     </header>
+//   );
+// };
+
+export default Navigation;

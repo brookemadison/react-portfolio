@@ -167,6 +167,15 @@ a {
   background-color: var(--primary);
 }
 
+.navbar-offcanvas:visited {
+  color: inherit;
+  }
+
+a.nav-link {
+  background-color: var(--primary);
+  ;
+}
+
 
 /* **HOMEPAGE SECTION** */
 
