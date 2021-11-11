@@ -21,6 +21,11 @@ const Project = (props) => {
         </a>
       </div>
 </div>
+
+<p>
+  This is where magic comes to life and visual stories are made. I believe that design must solve a need, stir a desire for involvement, and shed light on a path that is enjoyable, trustworthy, and human.
+  </p>
+  
 </section>
 
   {Array.from({ length: 4 }).map((_, idx) => (

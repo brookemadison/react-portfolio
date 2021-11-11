@@ -7,34 +7,24 @@ import coverImage from "../../assets/cover/cover-image.jpg";
 
 function About() {
   return (
-    <div>
+    <div className='about-section'>
     <section className='my-5'>
-          <h2 className='about-me-header'>
-          Hi, I'm Brooke! a <em>Web Designer</em> and <em> Full stack Developer</em> based in <em>Jacksonville, Florida</em>
+          <h2 
+        className='about-me-header'>
+          Hi, I'm <em>Brooke!</em>
         </h2>
-      <img
+      <img 
         src={coverImage}
-        className='my-2'
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
+        className='about-img'
         alt='cover'
       />
   <p>
-  This is where magic comes to life and visual stories are made. I believe that design must solve a need, stir a desire for involvement, and shed light on a path that is enjoyable, trustworthy, and human.
-  </p>
-  <p>
-  Full stack developer leveraging sales background to build a more intuitive user experience on the web. Recently earned a certificate in full stack development from University of Central Florida, with newly developed skills in Javascript, CSS, and responsive web design. Known as an innovative problem solver with a determination for learning new things. Passionate about approaching programming challenges from different angles and collaborating with others to create meaningful web applications.
+  I'm a Web Designer and full stack Developer based in Jacksonville, Florida. Leveraging my sales background to build a more intuitive user experience on the web. Recently I earned a certificate in full stack development from University of Central Florida, with newly developed skills in Javascript, CSS, and responsive web design. Known as an innovative problem solver with a determination for learning new things. I'm passionate about approaching programming challenges from different angles and collaborating with others to create meaningful web applications.
   </p>
 
-  <div className='btn' style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}>
-        <a href= 'src/assets/resume/resume.png' className='btns'>
+  <div className='btns btn'
+       >
+        <a href= 'src/assets/resume/resume.png'>
           Download Resume
         </a>
       </div>
