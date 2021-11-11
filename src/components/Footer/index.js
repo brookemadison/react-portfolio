@@ -3,6 +3,8 @@ import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 
 const Footer = () => {
   return (
+
+  
     <footer className='footer-container'>
       <div className='grow'>
       <a
@@ -35,6 +37,7 @@ const Footer = () => {
       </a>
       </div>
     </footer>
+
   );
 };
 

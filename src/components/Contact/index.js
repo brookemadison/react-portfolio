@@ -90,6 +90,17 @@ function ContactForm() {
           </div>
       </form>
       </div>
+      <div className='contact-simple'>
+      <h4>
+        Or just Keep it <em>Simple.</em>
+      </h4>
+      <p>
+        Email: Brookemadisondesign@gmail.com
+      </p>
+      <p>
+        Phone Number: 904-207-1528
+      </p>
+      </div>
     </section>
   );
 }
