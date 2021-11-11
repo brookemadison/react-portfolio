@@ -38,34 +38,38 @@ function ContactForm() {
 
   return (
     <section>
-      <h1 data-testid='h1tag'>
+      <h2 className='contact-section' data-testid='h1tag'>
         {" "}
         Say <em>Hi!,</em> <em>I'd like to</em> hear from you!
-      </h1>
-      <form id='contact-form' onSubmit={handleSubmit}>
-        <div>
+      </h2>
+      <div className='form'>
+      <form className='contact-form' id='contact-form' onSubmit={handleSubmit}>
+        <div className='contact-input'>
           <label htmlFor='name'>Name:</label>
           <input
             type='text'
             name='name'
+            size='60'
             defaultValue={name}
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className='contact-input'>
           <label htmlFor='email'>Email address:</label>
           <input
             type='email'
             name='email'
+            size='60'
             defaultValue={email}
             onBlur={handleChange}
           />
         </div>
-        <div>
+        <div className='contact-input'>
           <label htmlFor='message'>Message:</label>
           <textarea
             name='message'
             rows='5'
+            cols='60'
             defaultValue={message}
             onBlur={handleChange}
           />
@@ -75,12 +79,17 @@ function ContactForm() {
             <p className='error-text'>{errorMessage}</p>
           </div>
         )}
-        <div className='submit-btn'>
+          <div style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center"
+        }}>
           <button className='btns' data-testid='button' type='submit'>
             Submit
           </button>
-        </div>
+          </div>
       </form>
+      </div>
     </section>
   );
 }

@@ -25,28 +25,28 @@ const Navigation = (props) => {
             <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
               <Nav.Link
                 className="navbar-offcanvas"
-                href="src/components/Home/index"
+                href="/"
                 style={{ color: "#f5efea" }}
               >
                 Home
               </Nav.Link>
               <Nav.Link
                 className="navbar-offcanvas"
-                href="src/components/About/index"
+                href="#About"
                 style={{ color: "#f5efea" }}
               >
                 About
               </Nav.Link>
               <Nav.Link
                 className="navbar-offcanvas"
-                href="src/components/Project.index"
+                href="#Project"
                 style={{ color: "#f5efea" }}
               >
                 Projects
               </Nav.Link>
               <Nav.Link
                 className="navbar-offcanvas"
-                href="src/components/Contact/index"
+                href="#Contact"
                 style={{ color: "#f5efea" }}
               >
                 Contact
