@@ -26,7 +26,7 @@ const Project = (props) => {
 </section>
 
   {Array.from({ length: 1 }).map((_, idx) => (
-    
+    // First Project
     <Col >
       <Card>
         <Card.Img variant="top" src={ProjectThree} />
@@ -49,6 +49,7 @@ const Project = (props) => {
     
   ))}
   <Col>
+  {/* second project */}
       <Card>
         <Card.Img variant="top" src={ProjectTwo} />
         <Card.Body>
@@ -69,6 +70,7 @@ const Project = (props) => {
       </Card>
     </Col>
     <Col>
+    {/* Third Project */}
       <Card>
         <Card.Img variant="top" src={ProjectOne} />
         <Card.Body>
@@ -88,6 +90,7 @@ const Project = (props) => {
       </Card>
     </Col>
     <Col>
+    {/* Fourth Project */}
       <Card>
         <Card.Img variant="top" src={BudgetTracker} />
         <Card.Body>
