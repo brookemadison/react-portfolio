@@ -9,7 +9,7 @@ const Navigation = () => {
         <Navbar.Brand>
         <NavLink 
         className="navbar-brand"
-                to='/home'>
+                to='/react-portfolio'>
                   Brooke Madison
             </NavLink>
         </Navbar.Brand>
@@ -34,7 +34,7 @@ const Navigation = () => {
             <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
               <Nav.Link>
             <NavLink className="navbar-offcanvas"
-                style={{ color: "#f5efea" }} to='/home'>
+                style={{ color: "#f5efea" }} to='/react-portfolio'>
             Home
             </NavLink>
               </Nav.Link>
