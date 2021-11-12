@@ -75,3 +75,7 @@ window.onload = function() {
 };
 
 export default Home;
+
+
+// followed tutorial for typewrite css
+//by Simon Shahriveri (https://codepen.io/hi-im-si/pen/DHoup) 
