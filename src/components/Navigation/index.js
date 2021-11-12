@@ -9,7 +9,7 @@ const Navigation = () => {
         <Navbar.Brand>
         <NavLink 
         className="navbar-brand"
-                to='/react-portfolio'>
+                to='/home'>
                   Brooke Madison
             </NavLink>
         </Navbar.Brand>
@@ -74,30 +74,6 @@ const Navigation = () => {
 
   );
             };
-
-
-//     <header>
-//       <div >
-//         <nav>
-//           <NavLink to='/brookemadison-react-portfolio'>
-//             Home
-//           </NavLink>
-//           <NavLink to='/about'>
-//             About
-//           </NavLink>
-//           <NavLink to='/project'>
-//             Project
-//           </NavLink>
-//           <NavLink to='/resume'>
-//             Resume
-//           </NavLink>
-//           <NavLink to='/contact'>
-//             Contact
-//           </NavLink>
-//         </nav>
-//       </div>
-//     </header>
-//   );
-// };
+ 
 
 export default Navigation;

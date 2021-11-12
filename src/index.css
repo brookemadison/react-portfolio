@@ -178,6 +178,12 @@ a.nav-link {
 
 /* **HOMEPAGE SECTION** */
 
+.home-section {
+  margin-top: 200px;
+  margin-bottom:300px;
+}
+
+
 /* About Section */
 
 .about-section {
