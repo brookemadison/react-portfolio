@@ -1,15 +1,23 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button'
+import ResumeDownload from "../../assets/resume/resume.png";
 
 const Resume = ()=>{
     
   return(
 
 <div id="Resume">
-  <section>
-    <h1>resume will go here </h1>
+  <section className='resume-section'>
+    <h2>Resume</h2>
     <div className='btn'>
-  <button src="../../assets/resume/resume.png" alt="resume download"> Download
-</button>
+    <a href={ResumeDownload} download id="resume-download">
+                        <img
+                            src={require(`../../assets/resume/resume.png`).default}
+                            alt='resume'
+                            className="resume-img"
+                        />
+                        Download
+                    </a>
       </div>
 
   </section>

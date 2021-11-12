@@ -9,24 +9,22 @@ import ProjectOne from "../../assets/projects/2.png";
 import BudgetTracker from "../../assets/projects/3.png";
 
 
+const Project = (props) => {
+  return (
+<Row xs={1} md={2} className="g-4 project-section">
+
 <section>
 <div id="Project"> 
 <h3>A <em>small gallery</em> of recent projects <em>chosen by me.</em> Interested to <em>see some more? </em> Visit my <a className='project-link' style={{ textDecoration: 'none'}} href='https://github.com/brookemadison'>Github</a> page.</h3>
-<div className='btn'>
         <a href='https://github.com/brookemadison' className='btns see-more-btn'>
           See More
         </a>
       </div>
-</div>
 <p>
   This is where magic comes to life and visual stories are made. I believe that design must solve a need, stir a desire for involvement, and shed light on a path that is enjoyable, trustworthy, and human.
   </p>
 </section>
 
-
-const Project = (props) => {
-  return (
-<Row xs={1} md={2} className="g-4 project-section">
   {Array.from({ length: 1 }).map((_, idx) => (
     
     <Col >
