@@ -115,10 +115,10 @@ function App() {
     <div>
     <Nav/>
       <Switch>
-        <Route component={Home} path='/' exact />
+        <Route component={Home} path='/home' exact />
         <Route component={About} path='/about'/>
         <Route component={Project} path='/project'/>
-        <Route component={Resume} path='/Resume'/>
+        <Route component={Resume} path='/resume'/>
         <Route component={Contact} path='/contact'/>
       </Switch>
       <Footer/>
