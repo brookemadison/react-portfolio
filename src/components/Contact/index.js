@@ -95,10 +95,14 @@ function ContactForm() {
         Or just Keep it <em>Simple.</em>
       </h4>
       <p>
+      <a href="mailto:brookemadisondesign@gmail.com">
         Email: Brookemadisondesign@gmail.com
+        </a>
       </p>
       <p>
+      <a href="tel:9042071528">
         Phone Number: 904-207-1528
+        </a>
       </p>
       </div>
     </section>

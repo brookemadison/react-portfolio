@@ -7,7 +7,7 @@ const Home = ()=>{
 <div id="Home">
   <section>
   <h2  className="home-section">
-  <a href="/home" class="typewrite" data-period="2000" data-type='[ "Hi, I&#39;m Brooke.", "Welcome to my portfolio.", "Please look around. &#58;&#41;" ]'>
+  <a href="/about" class="typewrite" data-period="2000" data-type='[ "Hi, I&#39;m Brooke.", "Welcome to my portfolio.", "Please look around. &#58;&#41;" ]'>
     <span class="wrap"></span>
   </a>
 </h2>

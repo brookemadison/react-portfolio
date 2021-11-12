@@ -18,9 +18,8 @@ function About() {
   I'm a Web Designer and full stack Developer based in Jacksonville, Florida. Leveraging my sales background to build a more intuitive user experience on the web. Recently I earned a certificate in full stack development from University of Central Florida, with newly developed skills in Javascript, CSS, and responsive web design. Known as an innovative problem solver with a determination for learning new things. I'm passionate about approaching programming challenges from different angles and collaborating with others to create meaningful web applications.
   </p>
 
-  <div className='btns btn'
-       >
-        <a href= 'src/assets/resume/resume.png'>
+  <div className='btns btn'>
+        <a href="/resume">
           Download Resume
         </a>
       </div>
@@ -33,7 +32,7 @@ function About() {
           justifyContent: "center",
           alignItems: "center"
         }}>
-        <a href='#Contact' className='btns'>
+        <a href='/contact' className='btns'>
           Contact Me
         </a>
       </div>

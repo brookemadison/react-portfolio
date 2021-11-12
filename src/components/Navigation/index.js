@@ -47,7 +47,7 @@ const Navigation = () => {
               <Nav.Link>
            <NavLink className="navbar-offcanvas"
                 style={{ color: "#f5efea" }} to='/project'>
-             Project
+             Portfolio
            </NavLink>              
 </Nav.Link>
               <Nav.Link>

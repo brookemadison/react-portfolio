@@ -35,8 +35,14 @@ const Project = (props) => {
           <Card.Text>
             Details coming soon
           </Card.Text>
-          <Button className="projects-btns" variant="outline-dark">See Deployed</Button>
+          
+          <Button className="projects-btns" variant="outline-dark"> 
+          See Deployed
+          </Button>
+          
+          <a href="https://github.com/Lightfooted/High-Tech-Match-Love">
           <Button className="projects-btns"  variant="outline-dark">View on Github</Button>
+          </a>
         </Card.Body>
       </Card>
     </Col>
@@ -52,8 +58,13 @@ const Project = (props) => {
           <p>Technologies Used:</p>
           <p>HTML / CSS / Javascript / Node.js / Express / MySQL / dotenv / Heroku / jawsDB /Sequelize / Bcrypt / express-session / Handlebars / Animate.css / PokéAPI</p>
           </Card.Text>
+          <a href="https://protected-hamlet-00069.herokuapp.com/
+">
           <Button className="projects-btns"  variant="outline-dark">See Deployed</Button>
+          </a>
+          <a href="https://github.com/Lightfooted/pokedex-project">
           <Button className="projects-btns"  variant="outline-dark">View on Github</Button>
+          </a>
         </Card.Body>
       </Card>
     </Col>
@@ -67,8 +78,12 @@ const Project = (props) => {
             <p>Technologies Used:</p>
             <p>HTML / CSS / Javascript / jQuery / Bulma / Spoonacular API / Spotify API</p>
           </Card.Text>
+          <a href="https://padredilg.github.io/decide-eat/">
           <Button className="projects-btns"  variant="outline-dark">See Deployed</Button>
+          </a>
+          <a href="https://github.com/Padredilg/decide-eat">
           <Button className="projects-btns"  variant="outline-dark">View on Github</Button>
+          </a>
         </Card.Body>
       </Card>
     </Col>
@@ -82,8 +97,12 @@ const Project = (props) => {
             <p>Technologies Used:</p>
             <p>Javascript / indexedDB / Express / MongoDB / Mongoose / Heroku</p>
           </Card.Text>
+          <a href="https://lit-reaches-08410.herokuapp.com/">
           <Button className="projects-btns"  variant="outline-dark">See Deployed</Button>
+          </a>
+          <a href="https://github.com/brookemadison/budget-tracker">
           <Button className="projects-btns"  variant="outline-dark">View on Github</Button>
+          </a>
         </Card.Body>
       </Card>
     </Col>
