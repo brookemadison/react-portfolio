@@ -62,7 +62,7 @@ function ContactForm() {
             size='60'
             defaultValue={email}
             onBlur={handleChange}
-          />
+          /> 
         </div>
         <div className='contact-input'>
           <label htmlFor='message'>Message:</label>
