@@ -260,6 +260,10 @@ img.about-img {
 /* Project Section */
 
 .project {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1.1rem;
   margin-top: 0;
   font-family: 'Lato', sans-serif;
@@ -270,6 +274,30 @@ img.about-img {
 .project-link:visited {
 color: inherit;
 }
+
+.see-more-btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.project-section {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+h2.project-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.projects-btns {
+margin-left: 30px;
+}
+
 /* Contact Section */
 
 .contact-section{
