@@ -5,10 +5,7 @@
 * [Screenshot](#screenshot)
 * [Description](#description)
 * [Deployed Application](#deployed-application)
-* [Teachnologies Used](#technologies-used)
-* [Installation](#installation)
-* [Video Walkthrough](#video-walkthrough)
-* [License](#license)
+* [Technologies Used](#technologies-used)
 * [Contributors](#contributors)
 * [Questions](#questions)
 
