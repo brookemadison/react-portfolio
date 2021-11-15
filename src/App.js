@@ -12,7 +12,8 @@ function App() {
     <div>
     <Nav/>
       <Switch>
-        <Route component={Home} path='/https://brookemadison.github.io/react-portfolio/' exact />
+        {/* <Route component={Home} path='/https://brookemadison.github.io/react-portfolio/' exact /> */}
+        <Route component={Home} exact path="/" />
         <Route component={About} path='/https://brookemadison.github.io/about'/>
         <Route component={Project} path='/https://brookemadison.github.io/project'/>
         <Route component={Resume} path='/https://brookemadison.github.io/resume'/>
@@ -24,3 +25,32 @@ function App() {
   );
 }
 export default App;
+
+
+// import React from 'react';
+
+// import Nav from './components/Navigation';
+// import Home from './components/Home';
+// import About from './components/About';
+// import Project from './components/Project';
+// import Contact from './components/Contact';
+// import Resume from './components/Resume'
+// import Footer from './components/Footer/';
+
+// function App() {
+//   return (
+//     <div>
+//       <Nav />
+//       <main>
+//         <Home />
+//         <About />
+//         <Project />
+//         <Contact />
+//         <Resume />
+//         <Footer />
+//       </main>
+//     </div>
+//   );
+// }
+
+// export default App;
