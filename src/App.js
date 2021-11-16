@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Project from './components/Project';
@@ -8,17 +8,13 @@ import Nav from './components/Navigation';
 import Footer from './components/Footer';
 function App() {
   return (
-    <BrowserRouter>
-    <div>
+<BrowserRouter basename="/react-portfolio/">    <div>
     <Nav/>
-      <Switch>
-        {/* <Route component={Home} path='/https://brookemadison.github.io/react-portfolio/' exact /> */}
-        <Route component={Home} exact path="/" />
-        <Route component={About} path='/https://brookemadison.github.io/about'/>
-        <Route component={Project} path='/https://brookemadison.github.io/project'/>
-        <Route component={Resume} path='/https://brookemadison.github.io/resume'/>
-        <Route component={Contact} path='/https://brookemadison.github.io/contact'/>
-      </Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/project" component={Project}/>
+        <Route exact path="/resume" component={Resume}/>
+        <Route exact path="/contact" component={Contact}/>
       <Footer/>
       </div>
     </BrowserRouter>
