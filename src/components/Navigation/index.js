@@ -1,17 +1,17 @@
 import React from "react";
 import { Container, Navbar, Nav, Offcanvas } from "react-bootstrap";
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <Navbar className="navbar-style" bg="*" expand={false}>
       <Container  fluid>
         <Navbar.Brand>
-        <NavLink 
+        <Link 
         className="navbar-brand"
                 exact to='/'>
                   Brooke Madison
-            </NavLink>
+            </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
@@ -33,38 +33,38 @@ const Navigation = () => {
           className="navbar-offcanvas">
             <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
               <Nav.Link>
-            <NavLink className="navbar-offcanvas"
+            <Link className="navbar-offcanvas"
                 style={{ color: "#f5efea" }} exact to='/'>
             Home
-            </NavLink>
+            </Link>
               </Nav.Link>
               <Nav.Link>
-            <NavLink className="navbar-offcanvas"
+            <Link className="navbar-offcanvas"
                 style={{ color: "#f5efea" }} to='/about'>
              About
-           </NavLink>
+           </Link>
               </Nav.Link>
               <Nav.Link>
-           <NavLink className="navbar-offcanvas"
+           <Link className="navbar-offcanvas"
                 style={{ color: "#f5efea" }} to='/project'>
              Portfolio
-           </NavLink>              
-</Nav.Link>
+           </Link>              
+              </Nav.Link>
               <Nav.Link>
-             <NavLink  
+             <Link  
              className="navbar-offcanvas"
              style={{ color: "#f5efea" }}
                to='/contact'>
              Contact
-           </NavLink>
+           </Link>
               </Nav.Link>
               <Nav.Link>
-             <NavLink  
+             <Link  
              className="navbar-offcanvas"
              style={{ color: "#f5efea" }}
                to='/resume'>
             Resume
-           </NavLink>
+           </Link>
               </Nav.Link>
             </Nav>
           </Offcanvas.Body>
