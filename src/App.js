@@ -12,8 +12,7 @@ function App() {
     <div>
     <Nav/>
       <Switch>
-        {/* <Route component={Home} path='/https://brookemadison.github.io/react-portfolio/' exact /> */}
-        <Route component={Home} exact path="/" />
+        <Route component={Home} path='/https://brookemadison.github.io/react-portfolio/' exact />
         <Route component={About} path='/https://brookemadison.github.io/about'/>
         <Route component={Project} path='/https://brookemadison.github.io/project'/>
         <Route component={Resume} path='/https://brookemadison.github.io/resume'/>
