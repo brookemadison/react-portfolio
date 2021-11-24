@@ -31,9 +31,9 @@ const Project = (props) => {
       <Card>
         <Card.Img variant="top" src={ProjectThree} />
         <Card.Body>
-          <Card.Title><h4>Project Three</h4></Card.Title>
+          <Card.Title><h4>High Tech Love Match</h4></Card.Title>
           <Card.Text>
-            Details coming soon
+          High Tech Love Match is a dating app specifically created with the software engineer in mind. It is built to match like-minded people who are seeking a relationship.
           </Card.Text>
           
           <Button className="projects-btns" variant="outline-dark"> 
