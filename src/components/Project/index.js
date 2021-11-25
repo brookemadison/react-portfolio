@@ -36,10 +36,11 @@ const Project = (props) => {
           High Tech Love Match is a dating app specifically created with the software engineer in mind. It is built to match like-minded people who are seeking a relationship.
           </Card.Text>
           
+          <a href="https://high-tech-match.herokuapp.com/">
           <Button className="projects-btns" variant="outline-dark"> 
           See Deployed
           </Button>
-          
+          </a>
           <a href="https://github.com/Lightfooted/High-Tech-Match-Love">
           <Button className="projects-btns"  variant="outline-dark">View on Github</Button>
           </a>
