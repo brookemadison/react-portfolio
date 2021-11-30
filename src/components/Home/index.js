@@ -7,8 +7,8 @@ const Home = ()=>{
 <div id="Home">
   <section>
   <h2  className="home-section">
-  <a href="/about" class="typewrite" data-period="2000" data-type='[ "Hi, I&#39;m Brooke.", "Welcome to my portfolio.", "Please look around. &#58;&#41;" ]'>
-    <span class="wrap"></span>
+  <a href="/about" className="typewrite" data-period="2000" data-type='[ "Hi, I&#39;m Brooke.", "Welcome to my portfolio.", "Please look around. &#58;&#41;" ]'>
+    <span className="wrap"></span>
   </a>
 </h2>
   </section>
