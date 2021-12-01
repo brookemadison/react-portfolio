@@ -9,7 +9,7 @@ const Navigation = () => {
         <Navbar.Brand>
         <Link 
         className="navbar-brand"
-                exact to='/'>
+                to='/'>
                   Brooke Madison
             </Link>
         </Navbar.Brand>
@@ -34,7 +34,7 @@ const Navigation = () => {
             <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
               <Nav.Link>
             <Link className="navbar-offcanvas"
-                style={{ color: "#f5efea" }} exact to='/'>
+                style={{ color: "#f5efea" }} to='/'>
             Home
             </Link>
               </Nav.Link>
