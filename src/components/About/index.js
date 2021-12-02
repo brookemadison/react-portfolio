@@ -1,5 +1,8 @@
-import React from "react";
-import coverImage from "../../assets/cover/cover-image.jpg";
+import React from 'react';
+import coverImage from '../../assets/cover/cover-image.jpg';
+
+// This page seems to be working fine. I aligned the skills h2 to be center in index.css. You can change it back if you'd like.
+// Download Resume and Contact Me looks a little odd when hovered. You may have to fiddle with this.
 
 function About() {
   return (
@@ -14,31 +17,31 @@ function About() {
         className='about-img'
         alt='cover'
       />
-  <p>
-  I'm a Web Designer and full stack Developer based in Jacksonville, Florida. Leveraging my sales background to build a more intuitive user experience on the web. Recently I earned a certificate in full stack development from University of Central Florida, with newly developed skills in Javascript, CSS, and responsive web design. Known as an innovative problem solver with a determination for learning new things. I'm passionate about approaching programming challenges from different angles and collaborating with others to create meaningful web applications.
-  </p>
+      <p>
+      I'm a Web Designer and full stack Developer based in Jacksonville, Florida. Leveraging my sales background to build a more intuitive user experience on the web. Recently I earned a certificate in full stack development from University of Central Florida, with newly developed skills in Javascript, CSS, and responsive web design. Known as an innovative problem solver with a determination for learning new things. I'm passionate about approaching programming challenges from different angles and collaborating with others to create meaningful web applications.
+      </p>
 
-  <div className='btns btn'>
-        <a href="/resume">
-          Download Resume
-        </a>
+      <div className='btns btn'>
+            <a href='/resume'>
+              Download Resume
+            </a>
+          </div>
+
+      <h2 className='skills-text'>Skills</h2>
+      <p>UI/UX Design / Git / React / JavaScript ES6 + / CSS3 / HTML5 / SQL / NoSQL / Express / Node / Handlebars / jQuery / REST API / Bootstrap + React-Bootstrap / Bulma </p>
+
+            <div className='btn' style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
+            }}>
+            <a href='/contact' className='btns'>
+              Contact Me
+            </a>
+          </div>
+
+      </section>
       </div>
-
-  <h2>Skills</h2>
-  <p>UI/UX Design / Git / React / JavaScript ES6 + / CSS3 / HTML5 / SQL / NoSQL / Express / Node / Handlebars / jQuery / REST API / Bootstrap + React-Bootstrap / Bulma </p>
-
-         <div className='btn' style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
-        }}>
-        <a href='/contact' className='btns'>
-          Contact Me
-        </a>
-      </div>
-
-  </section>
-  </div>
   );
 }
 

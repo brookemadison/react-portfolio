@@ -1,79 +1,30 @@
-import React from "react";
-import { Container, Navbar, Nav, Offcanvas } from "react-bootstrap";
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+function Nav() {
   return (
-    <Navbar className="navbar-style" bg="*" expand={false}>
-      <Container  fluid>
-        <Navbar.Brand>
-        <Link 
-        className="navbar-brand"
-                to='/'>
-                  Brooke Madison
-            </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="offcanvasNavbar" />
-        <Navbar.Offcanvas
-          className="navbar-offcanvas"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-          placement="end"
-        >
-          <Offcanvas.Header 
-          className="navbar-offcanvas" closeButton>
-            <Offcanvas.Title
-              className="navbar-offcanvas"
-              id="offcanvasNavbarLabel"
-            >
-              Brooke Madison's Portfolio
-            </Offcanvas.Title>
-          </Offcanvas.Header>
-          <Offcanvas.Body 
-          className="navbar-offcanvas">
-            <Nav className="justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
-              <Nav.Link>
-            <Link className="navbar-offcanvas"
-                style={{ color: "#f5efea" }} to='/'>
+    <header>
+      <div>
+        <nav>
+          <NavLink to='/react-portfolio'>
             Home
-            </Link>
-              </Nav.Link>
-              <Nav.Link>
-            <Link className="navbar-offcanvas"
-                style={{ color: "#f5efea" }} to='/about'>
-             About
-           </Link>
-              </Nav.Link>
-              <Nav.Link>
-           <Link className="navbar-offcanvas"
-                style={{ color: "#f5efea" }} to='/project'>
-             Portfolio
-           </Link>              
-              </Nav.Link>
-              <Nav.Link>
-             <Link  
-             className="navbar-offcanvas"
-             style={{ color: "#f5efea" }}
-               to='/contact'>
-             Contact
-           </Link>
-              </Nav.Link>
-              <Nav.Link>
-             <Link  
-             className="navbar-offcanvas"
-             style={{ color: "#f5efea" }}
-               to='/resume'>
+          </NavLink>
+          <NavLink to='/about'>
+            About
+          </NavLink>
+          <NavLink to='/project'>
+            Project
+          </NavLink>
+          <NavLink to='/resume'>
             Resume
-           </Link>
-              </Nav.Link>
-            </Nav>
-          </Offcanvas.Body>
-        </Navbar.Offcanvas>
-      </Container>
-    </Navbar>
+          </NavLink>
+          <NavLink to='/contact'>
+            Contact
+          </NavLink>
+        </nav>
+      </div>
+    </header>
+  )
+}
 
-  );
-            };
- 
-
-export default Navigation;
+export default Nav;

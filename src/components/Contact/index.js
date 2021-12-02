@@ -1,37 +1,37 @@
-import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
       setFormState({ [e.target.name]: e.target.value });
-      console.log("Form", formState);
+      console.log('Form', formState);
     }
   };
 
   const handleChange = (e) => {
-    if (e.target.name === "email") {
+    if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
-        setErrorMessage("Your email is invalid.");
+        setErrorMessage('Your email is invalid.');
       } else {
-        setErrorMessage("");
+        setErrorMessage('');
       }
     } else {
       if (!e.target.value.length) {
         setErrorMessage(`${e.target.name} is required.`);
       } else {
-        setErrorMessage("");
+        setErrorMessage('');
       }
     }
   };
@@ -39,7 +39,7 @@ function ContactForm() {
   return (
     <section>
       <h2 className='contact-section' data-testid='h1tag'>
-        {" "}
+        {' '}
         Say <em>Hi!,</em> <em>I'd like to</em> hear from you!
       </h2>
       <div className='form'>
@@ -80,9 +80,9 @@ function ContactForm() {
           </div>
         )}
           <div style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center"
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center'
         }}>
           <button className='btns' data-testid='button' type='submit'>
             Submit
@@ -95,12 +95,12 @@ function ContactForm() {
         Or just Keep it <em>Simple.</em>
       </h4>
       <p>
-      <a href="mailto:brookemadisondesign@gmail.com">
+      <a href='mailto:brookemadisondesign@gmail.com'>
         Email: Brookemadisondesign@gmail.com
         </a>
       </p>
       <p>
-      <a href="tel:9042071528">
+      <a href='tel:9042071528'>
         Phone Number: 904-207-1528
         </a>
       </p>

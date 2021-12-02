@@ -1,15 +1,18 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Button from 'react-bootstrap/Button';
 import ProjectThree from "../../assets/projects/0.png";
 import ProjectTwo from "../../assets/projects/1.png";
 import ProjectOne from "../../assets/projects/2.png";
 import BudgetTracker from "../../assets/projects/3.png";
 
+// Make a container if you want to use a grid https://stackoverflow.com/questions/68322423/how-to-create-a-dynamic-grid-in-react-js
+// You have to many uses of <p> React doesn't like this. Remember to look at your dev tools. Either use Card Text or make use of li ul.
 
-const Project = (props) => {
+
+const Project = () => {
   return (
 <Row xs={1} md={2} className="g-4 project-section">
 
@@ -113,6 +116,5 @@ const Project = (props) => {
 </Row>
    );
   };
-
 
 export default Project;
