@@ -1,4 +1,5 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -8,15 +9,11 @@ import ProjectTwo from "../../assets/projects/1.png";
 import ProjectOne from "../../assets/projects/2.png";
 import BudgetTracker from "../../assets/projects/3.png";
 
-// Make a container if you want to use a grid https://stackoverflow.com/questions/68322423/how-to-create-a-dynamic-grid-in-react-js
-// You have to many uses of <p> React doesn't like this. Remember to look at your dev tools. Either use Card Text or make use of li ul.
-
-
 const Project = () => {
   return (
-<Row xs={1} md={2} className="g-4 project-section">
+<Container>
 
-<section>
+<section >
 <div id="Project"> 
 <h3>A <em>small gallery</em> of recent projects <em>chosen by me.</em> Interested to <em>see some more? </em> Visit my <a className='project-link' style={{ textDecoration: 'none'}} href='https://github.com/brookemadison'>Github</a> page.</h3>
         <a href='https://github.com/brookemadison' className='btns see-more-btn'>
@@ -28,9 +25,11 @@ const Project = () => {
   </p>
 </section>
 
+<Row xs={1} md={2} className="g-4 project-section">
+
   {Array.from({ length: 1 }).map((_, idx) => (
-    // First Project
-    <Col >
+// First Project
+<Col >
       <Card>
         <Card.Img variant="top" src={ProjectThree} />
         <Card.Body>
@@ -38,7 +37,12 @@ const Project = () => {
           <Card.Text>
           High Tech Love Match is a dating app specifically created with the software engineer in mind. It is built to match like-minded people who are seeking a relationship.
           </Card.Text>
-          
+          <Card.Text>
+          Technologies Used:
+          </Card.Text>
+          <Card.Text>
+          React / JavaScript / HTML / CSS / Axios / Apollo / GraphQL / Node.js / Express / Express.js / express session / MongoDB / Mongoose ODM / React Router DOM / Bcrypt / Dotenv / JWT /Heroku / Firebase / Cloudinary / Github API / dayjs
+          </Card.Text>
           <a href="https://high-tech-match.herokuapp.com/">
           <Button className="projects-btns" variant="outline-dark"> 
           See Deployed
@@ -53,18 +57,21 @@ const Project = () => {
     
   ))}
   <Col>
-  {/* second project */}
+{/* Second Project */}
       <Card>
         <Card.Img variant="top" src={ProjectTwo} />
         <Card.Body>
           <Card.Title><h4>Project Two - Pokédex</h4></Card.Title>
           <Card.Text>
-          <p>An online Pokédex that allows users to view and search for their favorite original 151 Pokémon.</p>
-          <p>Technologies Used:</p>
-          <p>HTML / CSS / Javascript / Node.js / Express / MySQL / dotenv / Heroku / jawsDB /Sequelize / Bcrypt / express-session / Handlebars / Animate.css / PokéAPI</p>
+          An online Pokédex that allows users to view and search for their favorite original 151 Pokémon.
           </Card.Text>
-          <a href="https://protected-hamlet-00069.herokuapp.com/
-">
+          <Card.Text>
+          Technologies Used:
+          </Card.Text>
+          <Card.Text>
+          HTML / CSS / Javascript / Node.js / Express / MySQL / dotenv / Heroku / jawsDB /Sequelize / Bcrypt / express-session / Handlebars / Animate.css / PokéAPI
+          </Card.Text>
+          <a href="https://protected-hamlet-00069.herokuapp.com/">
           <Button className="projects-btns"  variant="outline-dark">See Deployed</Button>
           </a>
           <a href="https://github.com/Lightfooted/pokedex-project">
@@ -80,9 +87,13 @@ const Project = () => {
         <Card.Body>
           <Card.Title><h4>Project One - Decide Eat</h4></Card.Title>
           <Card.Text>
-            <p>A date night app crafted to offer a unique experience to users by taking a quiz that pairs you with a recipe, cocktail, and music playlist recommendation</p>
-            <p>Technologies Used:</p>
-            <p>HTML / CSS / Javascript / jQuery / Bulma / Spoonacular API / Spotify API</p>
+            A date night app crafted to offer a unique experience to users by taking a quiz that pairs you with a recipe, cocktail, and music playlist recommendation
+          </Card.Text>
+          <Card.Text>
+            Technologies Used:
+          </Card.Text>
+          <Card.Text>
+            HTML / CSS / Javascript / jQuery / Bulma / Spoonacular API / Spotify API
           </Card.Text>
           <a href="https://padredilg.github.io/decide-eat/">
           <Button className="projects-btns"  variant="outline-dark">See Deployed</Button>
@@ -100,9 +111,13 @@ const Project = () => {
         <Card.Body>
           <Card.Title><h4>BudgetTracker</h4></Card.Title>
           <Card.Text>
-            <p>A PWA budget tracker application allows for offline access and functionality to to add expenses and deposits to their budget with or without a connection.</p>
-            <p>Technologies Used:</p>
-            <p>Javascript / indexedDB / Express / MongoDB / Mongoose / Heroku</p>
+            A PWA budget tracker application allows for offline access and functionality to to add expenses and deposits to their budget with or without a connection.
+          </Card.Text>
+          <Card.Text>
+            Technologies Used:
+          </Card.Text>
+          <Card.Text>
+            Javascript / indexedDB / Express / MongoDB / Mongoose / Heroku
           </Card.Text>
           <a href="https://lit-reaches-08410.herokuapp.com/">
           <Button className="projects-btns"  variant="outline-dark">See Deployed</Button>
@@ -114,6 +129,7 @@ const Project = () => {
       </Card>
     </Col>
 </Row>
+</Container>
    );
   };
 
