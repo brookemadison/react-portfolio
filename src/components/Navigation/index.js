@@ -1,31 +1,77 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Container, Navbar, Nav, Offcanvas } from "react-bootstrap";
 
-function Nav() {
-
+const Navigation = () => {
   return (
-    <header>
-      <div>
-        <nav>
-          <NavLink to='/react-portfolio'>
+    <Navbar collapseOnSelect    className="navbar-style" bg="*" expand={false}>
+      <Container  fluid>
+        <Navbar.Brand>
+        <NavLink classname="nav-header" to='/react-portfolio'>
+           <h3><em>Brooke Madison</em></h3>
+          </NavLink>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="offcanvasNavbar" />
+        <Navbar.Collapse id="offcanvasNavbar">
+        <Navbar.Offcanvas
+          className="navbar-offcanvas"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+          placement="end"
+        >
+          <Offcanvas.Header 
+          className="navbar-offcanvas" closeButton>
+            <Offcanvas.Title
+              className="navbar-offcanvas"
+              id="offcanvasNavbarLabel"
+            >
+              Brooke Madison's Portfolio
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body 
+          className="navbar-offcanvas">
+            <Nav onSelect className="me-auto justify-content-end flex-grow-1 pe-3 navbar-offcanvas">
+              <Nav.Link>
+              <NavLink to='/react-portfolio'>
             Home
           </NavLink>
-          <NavLink to='/about'>
-            About
-          </NavLink>
-          <NavLink to='/portfolio'>
-            Portfolio
-          </NavLink>
-          <NavLink to='/resume'>
+              </Nav.Link>
+              <Nav.Link>
+            <NavLink className="navbar-offcanvas"
+                to='/about'>
+             About
+           </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+           <NavLink className="navbar-offcanvas"
+      to='/portfolio'>
+             Portfolio
+           </NavLink>              
+              </Nav.Link>
+              <Nav.Link>
+             <NavLink  
+             className="navbar-offcanvas"
+            
+               to='/contact'>
+             Contact
+           </NavLink>
+              </Nav.Link>
+              <Nav.Link>
+             <NavLink  
+             className="navbar-offcanvas"
+             
+               to='/resume'>
             Resume
-          </NavLink>
-          <NavLink to='/contact'>
-            Contact
-          </NavLink>
-        </nav>
-      </div>
-    </header>
-  )
-}
+           </NavLink>
+              </Nav.Link>
+            </Nav>
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+            };
+ 
 
-export default Nav;
+export default Navigation;

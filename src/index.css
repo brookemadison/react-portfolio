@@ -155,6 +155,39 @@ a:hover {
   color: inherit
   }
 
+/* NAVBAR SECTION */
+
+NavLink{
+  font-family: "Roxborough CF Thin", serif;
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.navbar-style {
+  font-family: "Roxborough CF Thin", serif;
+}
+
+.navbar-offcanvas {
+  font-family: "Roxborough CF Thin", serif;
+  color: var(--light);
+  background-color: var(--primary);
+}
+
+.navbar-offcanvas:visited {
+  color: inherit;
+  }
+
+a.nav-link {
+  background-color: var(--primary);
+  text-decoration: none;
+  color: inherit;
+}
+
+a.nav-link:hover {
+  color: var(--dark);
+}
+
 /* **HOMEPAGE SECTION** */
 
 .home-section {
