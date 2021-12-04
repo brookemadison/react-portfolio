@@ -362,6 +362,10 @@ form {
   margin-bottom: 70px;
 }
 
+.link:hover {
+color: var(--primary);
+}
+
 /* Resume Section */
 
 .resume-section {
