@@ -413,3 +413,9 @@ form {
 .grow:hover { 
   transform: scale(1.3); 
   }
+
+  /* Not Found Page */
+
+  .not-found-page{
+    text-align: center;
+  }

@@ -8,6 +8,8 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Nav from './components/Navigation';
 import Footer from './components/Footer';
+import NotFoundPage from './components/NotFoundPage';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='resume' element={<Resume />} />
         <Route path='contact' element={<Contact />} />
+        <Route component={NotFoundPage} />
       </Routes>
       <Footer/>
     </div>
