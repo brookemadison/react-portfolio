@@ -20,10 +20,11 @@ const Portfolio = () => {
 <section>
 <div id="Project"> 
 <h3>A <em>small gallery</em> of recent projects <em>chosen by me.</em> Interested to <em>see some more? </em> Visit my <a className='project-link' style={{ textDecoration: 'none'}} href='https://github.com/brookemadison'>Github</a> page.</h3>
-<div className='btns see-more-btn'>
-<a href='https://github.com/brookemadison'> See More
+<a href="https://github.com/brookemadison">
+<button className='btns see-more-btn'> 
+See More
+</button>
 </a>
-</div>   
 </div>
 <p>
   This is where magic comes to life and visual stories are made. I believe that design must solve a need, stir a desire for involvement, and shed light on a path that is enjoyable, trustworthy, and human.

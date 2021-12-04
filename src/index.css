@@ -297,6 +297,10 @@ img.about-img {
 color: inherit;
 }
 
+.project-link:hover {
+  color: var(--primary);
+}
+
 .see-more-btn {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -375,6 +379,10 @@ form {
   height: 700px;
   width: 90%;
   margin-bottom: 20px;
+}
+
+.resume-btn {
+  width: 500px;
 }
 
 /* FOOTER START */
