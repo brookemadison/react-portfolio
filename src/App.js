@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
 import About from './components/About';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Nav from './components/Navigation';
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/react-portfolio' element={<Home />} />
         <Route path='about' element={<About />} />
-        <Route path='project' element={<Project />} />
+        <Route path='portfolio' element={<Portfolio />} />
         <Route path='resume' element={<Resume />} />
         <Route path='contact' element={<Contact />} />
       </Routes>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function Nav(props) {
+function Nav() {
 
   return (
     <header>
@@ -13,8 +13,8 @@ function Nav(props) {
           <NavLink to='/about'>
             About
           </NavLink>
-          <NavLink to='/project'>
-            Project
+          <NavLink to='/portfolio'>
+            Portfolio
           </NavLink>
           <NavLink to='/resume'>
             Resume

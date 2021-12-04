@@ -11,7 +11,7 @@ import BudgetTracker from "../../assets/projects/3.png";
 import PasswordGenerator from "../../assets/projects/4.png";
 import SocialNetworkAPI from "../../assets/projects/5.png";
 
-const Project = () => {
+const Portfolio = () => {
   return (
 <Container className='portfolio-container'>
 
@@ -186,4 +186,4 @@ const Project = () => {
    );
   };
 
-export default Project;
+export default Portfolio;
