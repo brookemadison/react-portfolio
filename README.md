@@ -27,6 +27,10 @@ https://brookemadison.github.io/react-portfolio/
 * React
 * React-Bootstrap
 * CSS
+* Axios (for the contact form)
+* Nodemailer (for the backend of the contact)
+* Node 
+* Express
 * Github Pages
   
 ## Contributors

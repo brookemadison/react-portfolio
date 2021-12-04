@@ -157,7 +157,7 @@ a:hover {
 
 /* NAVBAR SECTION */
 
-NavLink{
+a.navbar-brand{
   font-family: "Roxborough CF Thin", serif;
   font-size: 30px;
   font-weight: 100;
@@ -182,6 +182,7 @@ a.nav-link {
   background-color: var(--primary);
   text-decoration: none;
   color: inherit;
+  font-weight: 100;
 }
 
 a.nav-link:hover {
@@ -335,79 +336,26 @@ background-color: var(--dark);
   margin-top: 80px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-label {
-  display: inline-block;
-  width: 150px;
-  text-align: right;
-}
-
-div.form{
-  display: block;
-  text-align: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
   align-content: center;
+  justify-content: center;
 }
 
 form {
-  width: 80%;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   text-align: left;
   font-weight: lighter;
 }
 
-.contact-input{
-  margin-top: 15px;
-  margin-bottom: 15px;
+.form-group {
+  margin: 18px 120px 18px 120px;
 }
 
-input {
-  font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
-  outline: none;
-  border-radius: 3px;
-  transition: box-shadow 0.2s;
-}
-
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
-}
-
-textarea {
-  height: 120px;
-  border: 1px solid var(--darker);
-  padding: 5px;
-}
-
-.contact-form {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 70px;
-}
-
-button {
-  border: none;
-  text-decoration: none; 
+.contact-btn {
+  margin-bottom: 50px;
 }
 
 .contact-simple {
   text-align: center;
   margin-bottom: 70px;
-}
-
-h4.contact-h4 {
- margin-bottom: 100px;
 }
 
 /* Resume Section */
