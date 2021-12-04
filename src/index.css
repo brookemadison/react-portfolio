@@ -243,7 +243,13 @@ img.about-img {
   padding-bottom: var(--spacing-two);
 }
 
-/* Project Section */
+/* Portfolio Section */
+
+.portfolio-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
 
 .project {
   font-size: 1.1rem;
@@ -252,11 +258,6 @@ img.about-img {
   color: var(--darker);
   text-decoration: none;
 } 
-
-img.card-img-top {
-  width: 60%;
-  height: 60%;
-}
 
 .project-link:visited {
 color: inherit;
@@ -288,6 +289,10 @@ h2.project-header {
   justify-content: flex-start;
   margin-right: 20px;
   text-transform: uppercase;
+}
+
+.projects-btns:hover {
+background-color: var(--dark);
 }
 
 /* Contact Section */
