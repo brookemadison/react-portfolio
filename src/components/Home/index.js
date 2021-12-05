@@ -9,7 +9,7 @@ const Home = () => {
           strings: [
             "Hi, I'm Brooke.",
             "Welcome to my portfolio.",
-            "Please look around!",
+            "Please look around! :)",
           ],
           autoStart: true,
           loop: true,

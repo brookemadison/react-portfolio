@@ -1,103 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import axios from "axios";
 
-class ContactForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-    };
-  }
-
-  handleSubmit(e) {
+const ContactForm = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios({
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:3000/contact", {
       method: "POST",
-      url: "http://localhost:3002/send",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
     });
-  }
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+  return (
+    <div className="contact">
+      <h2 className="contact-section">
+        Say <em>Hi!,</em> <em>I'd like to</em> hear from you!
+      </h2>
 
-  resetForm() {
-    this.setState({ name: "", email: "", message: "" });
-  }
+      <form onSubmit={handleSubmit}>
+        <Row className="justify-content-md-center">
+          <Col xs lg="8">
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input className="form-control" type="text" id="name" required />
+            </div>
+          </Col>
+        </Row>
 
-  render() {
-    return (
-      <div className="contact">
-        <h2 className="contact-section">
-          Say <em>Hi!,</em> <em>I'd like to</em> hear from you!
-        </h2>
+        <Row className="justify-content-md-center">
+          <Col xs lg="8">
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                className="form-control"
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+          </Col>
+        </Row>
+        <Row className="justify-content-md-center">
+          <Col xs lg="8">
+            <div className="form-group">
+              <label htmlFor="message">Message:</label>
+              <textarea className="form-control" id="message" required />
+            </div>
+          </Col>
+        </Row>
 
-        <form
-          id="contact-form"
-          onSubmit={this.handleSubmit.bind(this)}
-          method="POST"
-        >
-          <Row className="justify-content-md-center">
-            <Col xs lg="8">
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  value={this.state.name}
-                  onChange={this.onNameChange.bind(this)}
-                />
-              </div>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs lg="8">
-              <div className="form-group">
-                <label htmlFor="exampleInputEmail1">Email address</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  aria-describedby="emailHelp"
-                  value={this.state.email}
-                  onChange={this.onEmailChange.bind(this)}
-                />
-              </div>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs lg="8">
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  className="form-control"
-                  rows="5"
-                  id="message"
-                  value={this.state.message}
-                  onChange={this.onMessageChange.bind(this)}
-                />
-              </div>
-            </Col>
-          </Row>
-          <Row className="justify-content-md-center">
-            <Col xs lg="8">
-              <div className="form-group">
-                <button type="submit" className="btns contact-btn">
-                  Submit
-                </button>
-              </div>
-            </Col>
-          </Row>
-        </form>
+        <Row className="justify-content-md-center">
+          <Col xs lg="8">
+            <div className="form-group">
+              <button type="submit" className="btns contact-btn">
+                {status}
+              </button>
+            </div>
+          </Col>
+        </Row>
 
         <div className="contact-simple">
           <h4 style={{ marginBottom: "13px" }}>
@@ -114,21 +87,9 @@ class ContactForm extends React.Component {
             </a>
           </p>
         </div>
-      </div>
-    );
-  }
-
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  onMessageChange(event) {
-    this.setState({ message: event.target.value });
-  }
-}
+      </form>
+    </div>
+  );
+};
 
 export default ContactForm;

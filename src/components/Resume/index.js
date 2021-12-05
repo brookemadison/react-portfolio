@@ -24,7 +24,7 @@ const Resume = () => {
         <Row className="justify-content-md-center">
           <Col xs lg="7">
             <div className="btns resume-btn">
-              <a href={ResumeDownload} download="Brooke Madison resume.png">
+              <a href={ResumeDownload} download="Brooke Madison's resume.png">
                 {" "}
                 Download{" "}
               </a>
