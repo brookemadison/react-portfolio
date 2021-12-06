@@ -1,5 +1,5 @@
 {
-  "homepage": "https://brookemadison.github.io/react-portfolio/",
+  "homepage": "http://www.brookemadison.tech",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,9 @@
     "react-swipeable": "^6.2.0",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^1.1.2",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "proxy": "http://localhost:3000"
+
   },
   "scripts": {
     "predeploy": "npm run build",
