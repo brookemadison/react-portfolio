@@ -35,7 +35,7 @@ const Navigation = () => {
                 className="me-auto justify-content-end flex-grow-1 pe-3 navbar-offcanvas"
               >
                 <Nav.Link>
-                  <NavLink to="/react-portfolio">Home</NavLink>
+                  <NavLink to="https://www.brookemadison.tech">Home</NavLink>
                 </Nav.Link>
                 <Nav.Link>
                   <NavLink className="navbar-offcanvas" to="/about">
