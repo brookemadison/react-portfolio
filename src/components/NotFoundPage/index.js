@@ -8,7 +8,7 @@ const NotFoundPage = () => {
         No page found. Sorry about that! Let's get you back to where you belong.
       </p>
       <div className="btns">
-        <a href="/react-portfolio">Go Back</a>
+        <a href="https://www.brookemadison.tech">Go Back</a>
       </div>
     </section>
   );

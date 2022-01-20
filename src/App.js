@@ -17,7 +17,7 @@ function App() {
     <div>
       <Nav/>
       <Routes>
-        <Route path='/https://www.brookemadison.tech/' element={<Home />} />
+        <Route path='https://www.brookemadison.tech/' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='resume' element={<Resume />} />
