@@ -430,4 +430,8 @@ color: var(--primary);
 
   .not-found-page{
     text-align: center;
+    margin-top: 150px;
+    margin-bottom: 290px;
+    margin-left: 40px;
+    margin-right: 40px;
   }

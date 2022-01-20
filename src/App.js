@@ -17,12 +17,12 @@ function App() {
     <div>
       <Nav/>
       <Routes>
-        <Route path='/react-portfolio' element={<Home />} />
+        <Route path='/https://www.brookemadison.tech/' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='resume' element={<Resume />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='notfoundpage' element={<NotFoundPage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
       <Footer/>
     </div>

@@ -46,7 +46,7 @@ router.post("/contact", (req, res) => {
   });
 });
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["https://localhost:3000"];
 
     app.use(
         cors({
