@@ -1,35 +1,36 @@
-import React, { useState } from "react";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React from "react";
+// import React, { useState } from "react";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 
 const ContactForm = () => {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("https://www.brookemadison.tech/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
+  // const [status, setStatus] = useState("Submit");
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus("Sending...");
+  //   const { name, email, message } = e.target.elements;
+  //   let details = {
+  //     name: name.value,
+  //     email: email.value,
+  //     message: message.value,
+  //   };
+  //   let response = await fetch("https://www.brookemadison.tech/contact", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json;charset=utf-8",
+  //     },
+  //     body: JSON.stringify(details),
+  //   });
+  //   setStatus("Submit");
+  //   let result = await response.json();
+  //   alert(result.status);
+  // };
   return (
     <div className="contact">
       <h2 className="contact-section">
         Say <em>Hi!,</em> <em>I'd like to</em> hear from you!
       </h2>
-
+{/* 
       <form onSubmit={handleSubmit}>
         <Row className="justify-content-md-center">
           <Col xs lg="8">
@@ -70,12 +71,12 @@ const ContactForm = () => {
               </button>
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <div className="contact-simple">
-          <h4 style={{ marginBottom: "13px" }}>
+          {/* <h4 style={{ marginBottom: "13px" }}>
             Or just Keep it <em>Simple.</em>
-          </h4>
+          </h4> */}
           <p>
             <a className="link" href="mailto:brookemadisondesign@gmail.com">
               Email: Brookemadisondesign@gmail.com
@@ -87,7 +88,7 @@ const ContactForm = () => {
             </a>
           </p>
         </div>
-      </form>
+      {/* </form> */}
     </div>
   );
 };
