@@ -1,4 +1,4 @@
-import * as React from 'react';
+// import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './components/Home';
@@ -22,7 +22,7 @@ function App() {
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='resume' element={<Resume />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='*' element={<NotFoundPage />} />
+        <Route path='notfoundpage' element={<NotFoundPage />} />
       </Routes>
       <Footer/>
     </div>
