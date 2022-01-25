@@ -26,7 +26,6 @@
     "web-vitals": "^1.1.2",
     "yup": "^0.32.11",
     "proxy": "http://localhost:3000"
-
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -55,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "netlify-cli": "^8.13.2"
   }
 }
