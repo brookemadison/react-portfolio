@@ -7,7 +7,7 @@ const Navigation = () => {
     <Navbar collapseOnSelect className="navbar-style" bg="*" expand={false}>
       <Container fluid>
         <Navbar.Brand>
-          <NavLink className="nav-header" to="/home">
+          <NavLink className="nav-header" to="/ http://brookemadison.tech/">
             <h3>
               <em>Brooke Madison</em>
             </h3>
@@ -35,7 +35,7 @@ const Navigation = () => {
                 className="me-auto justify-content-end flex-grow-1 pe-3 navbar-offcanvas"
               >
                 <Nav.Link>
-                  <NavLink to="/home">Home</NavLink>
+                  <NavLink to="/http://brookemadison.tech/">Home</NavLink>
                 </Nav.Link>
                 <Nav.Link>
                   <NavLink className="navbar-offcanvas" to="/about">
