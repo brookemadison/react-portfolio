@@ -7,7 +7,7 @@ const Navigation = () => {
     <Navbar collapseOnSelect className="navbar-style" bg="*" expand={false}>
       <Container fluid>
         <Navbar.Brand>
-          <NavLink className="nav-header" to="/ http://brookemadison.tech/">
+          <NavLink className="nav-header" to="/ home">
             <h3>
               <em>Brooke Madison</em>
             </h3>
