@@ -12,11 +12,11 @@ function App() {
     <div>
     <Nav/>
       <Switch>
-        <Route component={Home} path='/https://brookemadison.github.io/react-portfolio/' exact />
-        <Route component={About} path='/https://brookemadison.github.io/about'/>
-        <Route component={Project} path='/https://brookemadison.github.io/project'/>
-        <Route component={Resume} path='/https://brookemadison.github.io/resume'/>
-        <Route component={Contact} path='/https://brookemadison.github.io/contact'/>
+        <Route component={Home} path='/https://www.brookemadison.tech/' exact />
+        <Route component={About} path='/https://www.brookemadison.tech/about'/>
+        <Route component={Project} path='/https://www.brookemadison.tech/project'/>
+        <Route component={Resume} path='/https://www.brookemadison.tech/resume'/>
+        <Route component={Contact} path='/https://www.brookemadison.tech/contact'/>
       </Switch>
       <Footer/>
       </div>
