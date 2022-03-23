@@ -19,7 +19,8 @@ My portfolio built with React.
 
 ## Deployed Application
 
-https://brookemadison.github.io/react-portfolio/
+https://www.brookemadison.tech/
+
 
 ## Technologies Used
 
@@ -27,6 +28,10 @@ https://brookemadison.github.io/react-portfolio/
 * React
 * React-Bootstrap
 * CSS
+* Axios (for the contact form)
+* Nodemailer (for the backend of the contact)
+* Node 
+* Express
 * Github Pages
   
 ## Contributors
