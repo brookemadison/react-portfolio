@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "https://www.brookemadison.tech/home",
-=======
-  "homepage": "https://www.brookemadison.tech",
->>>>>>> 51573a20e7b746b36ac9ceeb3f1d7a38b5969146
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -33,11 +29,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-<<<<<<< HEAD
-    "deploy": "gh-pages -b main -d build",
-=======
     "deploy": "gh-pages -d build",
->>>>>>> 51573a20e7b746b36ac9ceeb3f1d7a38b5969146
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
