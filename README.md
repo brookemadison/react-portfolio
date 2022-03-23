@@ -19,7 +19,7 @@ My portfolio built with React.
 
 ## Deployed Application
 
-https://www.brookemadison.tech/
+https://brookemadison.github.io/react-portfolio/
 
 
 ## Technologies Used
