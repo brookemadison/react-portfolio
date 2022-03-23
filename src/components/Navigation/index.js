@@ -7,7 +7,7 @@ const Navigation = () => {
     <Navbar collapseOnSelect className="navbar-style" bg="*" expand={false}>
       <Container fluid>
         <Navbar.Brand>
-          <NavLink className="nav-header" to="/https://brookemadison.github.io/react-portfolio/">
+          <NavLink className="nav-header" to="/react-portfolio">
             <h3>
               <em>Brooke Madison</em>
             </h3>
@@ -35,7 +35,7 @@ const Navigation = () => {
                 className="me-auto justify-content-end flex-grow-1 pe-3 navbar-offcanvas"
               >
                 <Nav.Link>
-                  <NavLink to="/https://brookemadison.github.io/react-portfolio/">Home</NavLink>
+                  <NavLink to="/react-portfolio">Home</NavLink>
                 </Nav.Link>
                 <Nav.Link>
                   <NavLink className="navbar-offcanvas" to="/about">
